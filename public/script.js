@@ -14,7 +14,7 @@ async function getMacroById(req, res) {
     const macro = await db.Macros.findAll({
       where:
       macro_id: req_params.macro_id
-    });
+    })
     return macro; 
   }
   catch (err) {
