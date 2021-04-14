@@ -143,6 +143,7 @@ router.get('/meals', async (req, res) => {
     res.error('Server error');
   }
 });
+
 // adding yourModel to apiRoutes
 
 router.get('/Movies/:movie_id', async (req, res) => {
