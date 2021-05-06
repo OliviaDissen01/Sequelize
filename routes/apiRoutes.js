@@ -134,10 +134,10 @@ app.route('/movie_actors')
     res.send('delete the actor');
   });
 
-router.get('/meals', async (req, res) => {
+router.get('/movie_actors', async (req, res) => {
   try {
-    const meals = await db.Meals.findAll();
-    res.json(meals);
+    const actors = await db.inst377_imdb.findAll();
+    res.json(actors);
   } catch (err) {
     console.error(err);
     res.error('Server error');
